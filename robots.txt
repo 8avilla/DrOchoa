@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# drochoa.co
+Sitemap: https://drochoa.co/sitemap.xml
