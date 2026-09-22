@@ -138,7 +138,7 @@
             <a href="servicios.html#presion-arterial"><i class="fa-solid fa-gauge-high"></i> Toma de Presión Arterial</a>
             <a href="servicios.html#inyectologia"><i class="fa-solid fa-syringe"></i> Inyectología</a>
             <a href="servicios.html#certificado-medico"><i class="fa-solid fa-file-medical"></i> Certificado Médico</a>
-            <a href="servicios.html#quiropedia"><i class="fa-solid fa-shoe-prints"></i> Quiropedia Clínica <span style="opacity:.6;">(Próximamente)</span></a>
+            <a href="servicios.html#quiropedia"><i class="fa-solid fa-shoe-prints"></i> Podología</a>
           </div>
         </li>
         <li><a href="testimonios.html" class="nav-link">Testimonios</a></li>
@@ -248,11 +248,11 @@
         <div class="service-card-text">
           <div class="service-icon"><i class="fa-solid fa-shoe-prints"></i></div>
           <div>
-            <h4>Quiropedia Clínica <span style="font-size:11px;font-weight:700;color:var(--green);background:var(--green-light);padding:3px 8px;border-radius:20px;vertical-align:middle;">Próximamente</span></h4>
+            <h4>Podología</h4>
             <p>Cuidado integral de los pies: callos, uñas encarnadas, engrosadas, grietas y resequedad.</p>
           </div>
         </div>
-        <button type="button" class="more" id="btn-quiropedia-waitlist" onclick="document.getElementById('modal-waitlist').classList.add('open')" style="background:none;border:none;cursor:pointer;font-family:inherit;padding:0;">Únete a la lista de espera <i class="fa-solid fa-bell"></i></button>
+        <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20agendar%20un%20servicio%20de%20Podolog%C3%ADa." target="_blank" rel="noopener" class="more">Agendar por WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
   </div>
@@ -345,32 +345,6 @@
   <i class="fa-brands fa-whatsapp"></i>
   <span class="wa-label">WhatsApp</span>
 </a>
-
-<!-- Modal: Lista de espera Quiropedia Clínica -->
-<div class="modal-overlay" id="modal-waitlist" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-  <div class="modal-box">
-    <button class="modal-close" onclick="document.getElementById('modal-waitlist').classList.remove('open')" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
-    <div style="width:48px;height:48px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green);font-size:20px;margin-bottom:14px;">
-      <i class="fa-solid fa-shoe-prints"></i>
-    </div>
-    <h4 id="modal-title">Quiropedia Clínica — Lista de espera</h4>
-    <p class="modal-lead">Déjanos tu nombre y WhatsApp y serás de los primeros en saber cuando el servicio esté disponible.</p>
-    <form id="waitlist-form" novalidate>
-      <div class="form-group">
-        <label for="wl-nombre">Nombre completo *</label>
-        <input type="text" id="wl-nombre" name="nombre" placeholder="Tu nombre" required>
-      </div>
-      <div class="form-group">
-        <label for="wl-wa">WhatsApp *</label>
-        <input type="tel" id="wl-wa" name="whatsapp" placeholder="310 000 0000" required>
-      </div>
-      <input type="hidden" name="_subject" value="Lista de espera: Quiropedia Clínica — drochoa.co">
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-      <button type="submit" class="btn btn-primary btn-block"><i class="fa-regular fa-bell"></i> Anotarme en la lista</button>
-      <p id="waitlist-feedback" style="margin-top:10px;font-size:13.5px;"></p>
-    </form>
-  </div>
-</div>
 
 <script src="js/app.js"></script>
 </body>

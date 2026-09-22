@@ -143,48 +143,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- Modal lista de espera Quiropedia ---------- */
-  const waitlistForm = document.querySelector('#waitlist-form');
-  const modalOverlay = document.querySelector('#modal-waitlist');
-
-  if (waitlistForm && modalOverlay) {
-    const wlFeedback = document.querySelector('#waitlist-feedback');
-    const wlBtn = waitlistForm.querySelector('button[type="submit"]');
-    const WL_ENDPOINT = 'https://formsubmit.co/ajax/contacto@drochoa.co';
-
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) modalOverlay.classList.remove('open');
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') modalOverlay.classList.remove('open');
-    });
-
-    waitlistForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const required = waitlistForm.querySelectorAll('[required]');
-      let valid = true;
-      required.forEach(f => {
-        if (!f.value.trim()) { valid = false; f.style.borderColor = '#d9534f'; }
-        else f.style.borderColor = '';
-      });
-      if (!valid) { if (wlFeedback) { wlFeedback.textContent = 'Por favor completa los campos requeridos.'; wlFeedback.style.color = '#d9534f'; } return; }
-
-      const originalHTML = wlBtn.innerHTML;
-      wlBtn.disabled = true;
-      wlBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Guardando...';
-
-      const formData = new FormData(waitlistForm);
-      fetch(WL_ENDPOINT, { method: 'POST', headers: { Accept: 'application/json' }, body: formData })
-        .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-        .then(() => {
-          if (wlFeedback) { wlFeedback.textContent = '¡Listo! Te avisaremos en cuanto Quiropedia Clínica esté disponible.'; wlFeedback.style.color = 'var(--green)'; }
-          waitlistForm.reset();
-        })
-        .catch(() => {
-          if (wlFeedback) { wlFeedback.textContent = 'Error al enviar. Escríbenos directamente por WhatsApp.'; wlFeedback.style.color = '#d9534f'; }
-        })
-        .finally(() => { wlBtn.disabled = false; wlBtn.innerHTML = originalHTML; });
-    });
-  }
-
 });
