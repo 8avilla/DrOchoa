@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Formulario de contacto: validación + envío real vía FormSubmit ---------- */
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
-    const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/rodrigo8alvear@gmail.com';
+    const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/8avilla@gmail.com';
     const feedback = document.querySelector('#form-feedback');
     const submitBtn = contactForm.querySelector('button[type="submit"]');
 
