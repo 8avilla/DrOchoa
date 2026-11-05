@@ -18,13 +18,12 @@
     content="Programa Integral de Peso Saludable con aplicación de tirzepatida (Mounjaro®) con registro INVIMA, según criterio médico. Valoración, plan nutricional y seguimiento mensual en Cartagena de Indias.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=3">
-  <link rel="stylesheet" href="css/responsive.css?v=3">
-  <link rel="stylesheet" href="css/animations.css?v=3">
+  <link rel="stylesheet" href="css/icons.css?v=d1d208a7">
+  <link rel="stylesheet" href="css/style.css?v=cab3d30f">
+  <link rel="stylesheet" href="css/responsive.css?v=3c32fe7f">
+  <link rel="stylesheet" href="css/animations.css?v=314f09f9">
 
   <!-- === SEO Fase 1 & 2: drochoa.co === -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/portada_drochoa.jpeg">
   <link rel="canonical" href="https://drochoa.co/programa-adelgazar.html">
@@ -57,7 +56,7 @@
       "alternateName": "Dr. Ochoa",
       "url": "https://drochoa.co",
       "telephone": "+573106457155",
-      "email": "rodrigo8alvear@gmail.com ",
+      "email": "rodrigo8alvear@gmail.com",
       "image": "https://drochoa.co/assets/img/portada_drochoa.jpeg",
       "description": "Médico General en Cartagena de Indias. Consulta Externa (presencial, virtual y domiciliaria), Programa Integral de Peso Saludable con tirzepatida (Mounjaro®) registro INVIMA y Sueroterapia con medicamentos alemanes.",
       "areaServed": {
@@ -66,6 +65,7 @@
       },
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Av. Pedro de Heredia, Calle 31 N° 58-38, Escallón Villa, local 120",
         "addressLocality": "Cartagena de Indias",
         "addressRegion": "Bolívar",
         "addressCountry": "CO"
@@ -87,7 +87,12 @@
       "priceRange": "$$",
       "sameAs": [
         "https://wa.me/573106457155"
-      ]
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Centro Médico Los Ejecutivos"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Centro+M%C3%A9dico+Los+Ejecutivos%2C+Av.+Pedro+de+Heredia%2C+Calle+31+%2358-38%2C+Cartagena+de+Indias"
     },
     {
       "@type": "Service",
@@ -177,37 +182,39 @@
 </head>
 
 <body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
 
   <header>
     <div class="container nav-wrap">
       <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-stethoscope"></i></div>
+        <div class="logo-icon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></div>
         <div class="logo-text">
           <span class="logo-brand">Dr. Ochoa</span>
           <span>Tu salud, nuestra prioridad</span>
         </div>
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="menu-principal" aria-label="Principal">
         <ul>
           <li><a href="index.html" class="nav-link">Inicio</a></li>
           <li><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
           <li class="has-dropdown active">
-            <a href="servicios.html" class="nav-link">Servicios <i class="fa-solid fa-chevron-down"
+            <a href="servicios.html" class="nav-link">Servicios <i class="fa-solid fa-chevron-down" aria-hidden="true"
                 style="font-size:10px;"></i></a>
             <div class="dropdown">
-              <a href="servicios.html#consulta-externa"><i class="fa-solid fa-house-medical"></i> Consulta Externa</a>
-              <a href="servicios.html#quiropedia"><i class="fa-solid fa-shoe-prints"></i> Podología Clínica y
+              <a href="consulta-externa.html"><i class="fa-solid fa-house-medical" aria-hidden="true"></i> Consulta Externa</a>
+              <a href="quiropedia.html"><i class="fa-solid fa-shoe-prints" aria-hidden="true"></i> Podología Clínica y
                 Quiropedia</a>
-              <a href="programa-adelgazar.html"><i class="fa-solid fa-weight-scale"></i> Programa Integral de Peso
+              <a href="programa-adelgazar.html"><i class="fa-solid fa-weight-scale" aria-hidden="true"></i> Programa Integral de Peso
                 Saludable</a>
-              <a href="consulta-virtual.html"><i class="fa-solid fa-video"></i> Consulta Virtual</a>
-              <a href="electrocardiograma.html"><i class="fa-solid fa-heart-pulse"></i> Electrocardiograma</a>
-              <a href="sueroterapia.html"><i class="fa-solid fa-droplet"></i> Sueroterapia</a>
-              <a href="servicios.html#presion-arterial"><i class="fa-solid fa-gauge-high"></i> Toma de Presión
+              <a href="consulta-virtual.html"><i class="fa-solid fa-video" aria-hidden="true"></i> Consulta Virtual</a>
+              <a href="electrocardiograma.html"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Electrocardiograma</a>
+              <a href="sueroterapia.html"><i class="fa-solid fa-droplet" aria-hidden="true"></i> Sueroterapia</a>
+              <a href="medicina-estetica.html"><i class="fa-solid fa-spa" aria-hidden="true"></i> Medicina Estética</a>
+              <a href="presion-arterial.html"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> Toma de Presión
                 Arterial</a>
-              <a href="servicios.html#inyectologia"><i class="fa-solid fa-syringe"></i> Inyectología</a>
-              <a href="servicios.html#certificado-medico"><i class="fa-solid fa-file-medical"></i> Certificado
+              <a href="inyectologia.html"><i class="fa-solid fa-syringe" aria-hidden="true"></i> Inyectología</a>
+              <a href="certificado-medico.html"><i class="fa-solid fa-file-medical" aria-hidden="true"></i> Certificado
                 Médico</a>
             </div>
           </li>
@@ -217,20 +224,20 @@
       </nav>
 
       <div class="header-actions">
-        <a href="tel:+573106457155" class="phone-link"><i class="fa-solid fa-phone"></i> 310 645 7155</a>
-        <a href="contacto.html" class="btn btn-primary"><i class="fa-regular fa-calendar"></i> Agendar cita</a>
-        <button class="menu-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+        <a href="tel:+573106457155" class="phone-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> 310 645 7155</a>
+        <a href="contacto.html" class="btn btn-primary"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Agendar cita</a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-controls="menu-principal" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
       </div>
     </div>
   </header>
 
-  <section class="page-header">
+  <section class="page-header" id="contenido" tabindex="-1">
     <div class="container">
       <span class="eyebrow">PROGRAMA INTEGRAL DE PESO SALUDABLE</span>
       <h1>Pérdida de peso segura y con respaldo médico</h1>
       <div class="breadcrumb">
-        <a href="index.html">Inicio</a> <i class="fa-solid fa-chevron-right"></i>
-        <a href="servicios.html">Servicios</a> <i class="fa-solid fa-chevron-right"></i>
+        <a href="index.html">Inicio</a> <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        <a href="servicios.html">Servicios</a> <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         <span>Programa Integral de Peso Saludable</span>
       </div>
     </div>
@@ -239,7 +246,7 @@
   <section class="service-detail">
     <div class="container service-detail-grid">
       <div class="reveal">
-        <span class="eyebrow"><i class="fa-solid fa-weight-scale"></i> CONTROL DE PESO</span>
+        <span class="eyebrow"><i class="fa-solid fa-weight-scale" aria-hidden="true"></i> CONTROL DE PESO</span>
         <h2 style="margin-top:14px;">Un plan médico hecho a tu medida</h2>
         <p class="lead">
           Nuestro programa combina valoración médica, plan nutricional, control de composición corporal y,
@@ -248,12 +255,12 @@
         </p>
 
         <ul class="check-list">
-          <li><i class="fa-solid fa-circle-check"></i> Valoración médica y metabólica inicial.</li>
-          <li><i class="fa-solid fa-circle-check"></i> Aplicación de tirzepatida (Mounjaro®) con registro INVIMA, según
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Valoración médica y metabólica inicial.</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Aplicación de tirzepatida (Mounjaro®) con registro INVIMA, según
             criterio médico.</li>
-          <li><i class="fa-solid fa-circle-check"></i> Plan de alimentación personalizado según tu estilo de vida.</li>
-          <li><i class="fa-solid fa-circle-check"></i> Control periódico de peso, medidas y composición corporal.</li>
-          <li><i class="fa-solid fa-circle-check"></i> Acompañamiento médico continuo, sin dietas extremas.</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Plan de alimentación personalizado según tu estilo de vida.</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Control periódico de peso, medidas y composición corporal.</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Acompañamiento médico continuo, sin dietas extremas.</li>
         </ul>
 
         <p style="font-size:13px;color:var(--text-gray);margin-bottom:24px;">
@@ -263,9 +270,9 @@
 
         <div class="hero-buttons">
           <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Programa%20Integral%20de%20Peso%20Saludable."
-            target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Escríbenos por
+            target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Escríbenos por
             WhatsApp</a>
-          <a href="contacto.html" class="btn btn-outline"><i class="fa-regular fa-calendar"></i> Agendar cita</a>
+          <a href="contacto.html" class="btn btn-outline"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Agendar cita</a>
         </div>
       </div>
 
@@ -278,7 +285,7 @@
           <li>Registro <span>INVIMA</span></li>
           <li>Seguimiento <span>Mensual</span></li>
         </ul>
-        <a href="contacto.html" class="btn btn-primary btn-block"><i class="fa-regular fa-calendar"></i> Reservar
+        <a href="contacto.html" class="btn btn-primary btn-block"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Reservar
           consulta</a>
       </aside>
     </div>
@@ -319,25 +326,25 @@
 
   <section class="stats-bar">
     <div class="container stats-grid">
-      <div class="stat-item reveal"><i class="fa-regular fa-clock"></i>
+      <div class="stat-item reveal"><i class="fa-regular fa-clock" aria-hidden="true"></i>
         <div>
           <h5>Atención rápida</h5>
           <p>Agenda fácil y sin filas</p>
         </div>
       </div>
-      <div class="stat-item reveal reveal-delay-1"><i class="fa-solid fa-user-doctor"></i>
+      <div class="stat-item reveal reveal-delay-1"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
         <div>
           <h5>Doctores aliados</h5>
           <p>Especialistas certificados</p>
         </div>
       </div>
-      <div class="stat-item reveal reveal-delay-2"><i class="fa-solid fa-shield-halved"></i>
+      <div class="stat-item reveal reveal-delay-2"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
         <div>
           <h5>Resultados confiables</h5>
           <p>Informes claros y precisos</p>
         </div>
       </div>
-      <div class="stat-item reveal reveal-delay-3"><i class="fa-solid fa-hand-holding-heart"></i>
+      <div class="stat-item reveal reveal-delay-3"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
         <div>
           <h5>Acompañamiento</h5>
           <p>Antes, durante y después</p>
@@ -355,7 +362,7 @@
       <div class="faq-list">
         <div class="faq-item reveal">
           <button class="faq-question" aria-expanded="false">¿Es seguro el tratamiento con tirzepatida (Mounjaro®)?
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+            <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></button>
           <div class="faq-answer">
             <p>Se aplica únicamente bajo valoración y criterio médico, con un medicamento que cuenta con registro
               INVIMA. Antes de iniciar, se evalúa tu historial de salud para confirmar que eres un candidato adecuado.
@@ -364,7 +371,7 @@
         </div>
         <div class="faq-item reveal reveal-delay-1">
           <button class="faq-question" aria-expanded="false">¿Necesito una valoración médica previa? <span
-              class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+              class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></button>
           <div class="faq-answer">
             <p>Sí, es obligatoria. No se aplica el medicamento sin una consulta inicial donde se revisan tu estado de
               salud, antecedentes y objetivos.</p>
@@ -372,7 +379,7 @@
         </div>
         <div class="faq-item reveal reveal-delay-2">
           <button class="faq-question" aria-expanded="false">¿Cada cuánto es el seguimiento? <span class="faq-icon"><i
-                class="fa-solid fa-plus"></i></span></button>
+                class="fa-solid fa-plus" aria-hidden="true"></i></span></button>
           <div class="faq-answer">
             <p>El programa incluye seguimiento mensual para monitorear tu progreso, ajustar el plan y resolver cualquier
               inquietud durante el proceso.</p>
@@ -380,7 +387,7 @@
         </div>
         <div class="faq-item reveal reveal-delay-3">
           <button class="faq-question" aria-expanded="false">¿El programa incluye plan de alimentación? <span
-              class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+              class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></button>
           <div class="faq-answer">
             <p>Sí, se complementa con un plan de alimentación personalizado según tu estilo de vida, además del
               componente médico.</p>
@@ -388,7 +395,7 @@
         </div>
         <div class="faq-item reveal">
           <button class="faq-question" aria-expanded="false">¿Cómo agendo mi primera valoración? <span
-              class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+              class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span></button>
           <div class="faq-answer">
             <p>Puedes escribirnos por WhatsApp o llenar el formulario de contacto y te confirmamos un horario
               disponible.</p>
@@ -398,11 +405,33 @@
     </div>
   </section>
 
+  <section class="testimonials" style="padding-top:64px;">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">LO QUE DICEN NUESTROS PACIENTES</span>
+        <h3>Experiencias reales</h3>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-card-head">
+            <div class="testi-avatar c2">A</div>
+            <div class="testi-name-row"><span class="testi-author">Andrés P.</span><span
+                class="testi-service-tag">Programa de Peso</span></div>
+          </div>
+          <div class="testi-stars">★★★★★ <span class="score">5.0</span></div>
+          <p class="testi-quote">"El Programa Integral de Peso Saludable realmente funciona. El seguimiento mensual del
+            doctor marca la diferencia. Me siento mucho mejor."</p>
+        </div>
+      </div>
+      <p style="margin-top:22px;"><a href="testimonios.html" class="testi-link">Ver todos los testimonios <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+    </div>
+  </section>
+
   <section class="cta-section">
     <div class="container">
       <div class="cta-bar reveal">
         <div class="cta-left">
-          <div class="icon-circle"><i class="fa-regular fa-calendar"></i></div>
+          <div class="icon-circle"><i class="fa-regular fa-calendar" aria-hidden="true"></i></div>
           <div>
             <h5>Comienza tu plan hoy</h5>
             <p>Tu salud es nuestra prioridad.</p>
@@ -410,13 +439,13 @@
         </div>
         <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20agendar%20una%20cita." target="_blank"
           rel="noopener" class="cta-mid">
-          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           <div>
             <div class="label">Atención rápida por WhatsApp</div>
             <div class="phone">310 645 7155</div>
           </div>
         </a>
-        <a href="contacto.html" class="btn btn-white cta-right"><i class="fa-regular fa-calendar"></i> Agendar cita
+        <a href="contacto.html" class="btn btn-white cta-right"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Agendar cita
           ahora</a>
       </div>
     </div>
@@ -427,16 +456,16 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-logo">
-            <div class="logo-icon"><i class="fa-solid fa-stethoscope"></i></div>
+            <div class="logo-icon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></div>
             <span>Dr. Ochoa</span>
           </div>
           <p>Consulta Externa, Sueroterapia y Programas de Salud con enfoque preventivo y acompañamiento profesional.
           </p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
             <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
-              target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -453,22 +482,22 @@
         <div class="footer-col">
           <h4>Servicios</h4>
           <ul>
-            <li><a href="servicios.html#consulta-externa">Consulta Externa</a></li>
+            <li><a href="consulta-externa.html">Consulta Externa</a></li>
             <li><a href="programa-adelgazar.html">Programa Integral de Peso Saludable</a></li>
             <li><a href="electrocardiograma.html">Electrocardiograma</a></li>
             <li><a href="sueroterapia.html">Sueroterapia</a></li>
+            <li><a href="medicina-estetica.html">Medicina Estética</a></li>
             <li><a href="servicios.html">Ver todos los servicios</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Contacto</h4>
-          <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Cartagena de Indias,
-              Colombia</span></div>
-          <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><span>310 645 7155</span></div>
-          <div class="footer-contact-item"><i class="fa-regular fa-envelope"></i><span>rodrigo8alvear@gmail.com </span>
+          <div class="footer-contact-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Centro Médico Los Ejecutivos, Av. Pedro de Heredia, Calle 31 N° 58-38, Escallón Villa, local 120, Cartagena de Indias</span></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>310 645 7155</span></div>
+          <div class="footer-contact-item"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>rodrigo8alvear@gmail.com</span>
           </div>
-          <div class="footer-contact-item"><i class="fa-regular fa-clock"></i><span>Lun – Sáb: 8:00am – 6:00pm</span>
+          <div class="footer-contact-item"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Lun – Sáb: 8:00am – 6:00pm</span>
           </div>
         </div>
       </div>
@@ -481,11 +510,11 @@
 
   <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     <span class="wa-label">WhatsApp</span>
   </a>
 
-  <script src="js/app.js?v=3"></script>
+  <script src="js/app.js?v=87fe634e"></script>
 </body>
 
 </html>

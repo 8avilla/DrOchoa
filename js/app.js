@@ -12,9 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
   if (menuToggle && mainNav) {
     menuToggle.addEventListener('click', () => {
       const isOpen = mainNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
       menuToggle.innerHTML = isOpen
-        ? '<i class="fa-solid fa-xmark"></i>'
-        : '<i class="fa-solid fa-bars"></i>';
+        ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>'
+        : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+    });
+
+    // Esc cierra el menú móvil y devuelve el foco al botón
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+        menuToggle.click();
+        menuToggle.focus();
+      }
     });
   }
 
@@ -23,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', (e) => {
       if (window.innerWidth <= 980) {
         e.preventDefault();
-        link.parentElement.classList.toggle('open');
+        const open = link.parentElement.classList.toggle('open');
+        link.setAttribute('aria-expanded', String(open));
       }
     });
   });
@@ -92,8 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!field.value.trim()) {
           valid = false;
           field.style.borderColor = '#d9534f';
+          field.setAttribute('aria-invalid', 'true');
         } else {
           field.style.borderColor = '';
+          field.removeAttribute('aria-invalid');
         }
       });
 
@@ -112,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const originalBtnHTML = submitBtn.innerHTML;
       submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando...';
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Enviando...';
 
       fetch(FORMSUBMIT_ENDPOINT, {
         method: 'POST',

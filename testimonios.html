@@ -18,13 +18,12 @@
     content="Lo que dicen los pacientes del Dr. Rodrigo Ochoa, Médico General en Cartagena de Indias. Testimonios sobre Consulta Externa, Programa de Pérdida de Peso y Sueroterapia.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=3">
-  <link rel="stylesheet" href="css/responsive.css?v=3">
-  <link rel="stylesheet" href="css/animations.css?v=3">
+  <link rel="stylesheet" href="css/icons.css?v=d1d208a7">
+  <link rel="stylesheet" href="css/style.css?v=cab3d30f">
+  <link rel="stylesheet" href="css/responsive.css?v=3c32fe7f">
+  <link rel="stylesheet" href="css/animations.css?v=314f09f9">
 
   <!-- === SEO Fase 1 & 2: drochoa.co === -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/portada_drochoa.jpeg">
   <link rel="canonical" href="https://drochoa.co/testimonios.html">
@@ -57,7 +56,7 @@
       "alternateName": "Dr. Ochoa",
       "url": "https://drochoa.co",
       "telephone": "+573106457155",
-      "email": "rodrigo8alvear@gmail.com ",
+      "email": "rodrigo8alvear@gmail.com",
       "image": "https://drochoa.co/assets/img/portada_drochoa.jpeg",
       "description": "Médico General en Cartagena de Indias. Consulta Externa (presencial, virtual y domiciliaria), Programa Integral de Peso Saludable con tirzepatida (Mounjaro®) registro INVIMA y Sueroterapia con medicamentos alemanes.",
       "areaServed": {
@@ -66,6 +65,7 @@
       },
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Av. Pedro de Heredia, Calle 31 N° 58-38, Escallón Villa, local 120",
         "addressLocality": "Cartagena de Indias",
         "addressRegion": "Bolívar",
         "addressCountry": "CO"
@@ -87,7 +87,12 @@
       "priceRange": "$$",
       "sameAs": [
         "https://wa.me/573106457155"
-      ]
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Centro Médico Los Ejecutivos"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Centro+M%C3%A9dico+Los+Ejecutivos%2C+Av.+Pedro+de+Heredia%2C+Calle+31+%2358-38%2C+Cartagena+de+Indias"
     },
     {
       "@type": "BreadcrumbList",
@@ -112,37 +117,39 @@
 </head>
 
 <body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
 
   <header>
     <div class="container nav-wrap">
       <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-stethoscope"></i></div>
+        <div class="logo-icon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></div>
         <div class="logo-text">
           <span class="logo-brand">Dr. Ochoa</span>
           <span>Tu salud, nuestra prioridad</span>
         </div>
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="menu-principal" aria-label="Principal">
         <ul>
           <li><a href="index.html" class="nav-link">Inicio</a></li>
           <li><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
           <li class="has-dropdown">
-            <a href="servicios.html" class="nav-link">Servicios <i class="fa-solid fa-chevron-down"
+            <a href="servicios.html" class="nav-link">Servicios <i class="fa-solid fa-chevron-down" aria-hidden="true"
                 style="font-size:10px;"></i></a>
             <div class="dropdown">
-              <a href="servicios.html#consulta-externa"><i class="fa-solid fa-house-medical"></i> Consulta Externa</a>
-              <a href="servicios.html#quiropedia"><i class="fa-solid fa-shoe-prints"></i> Podología Clínica y
+              <a href="consulta-externa.html"><i class="fa-solid fa-house-medical" aria-hidden="true"></i> Consulta Externa</a>
+              <a href="quiropedia.html"><i class="fa-solid fa-shoe-prints" aria-hidden="true"></i> Podología Clínica y
                 Quiropedia</a>
-              <a href="programa-adelgazar.html"><i class="fa-solid fa-weight-scale"></i> Programa Integral de Peso
+              <a href="programa-adelgazar.html"><i class="fa-solid fa-weight-scale" aria-hidden="true"></i> Programa Integral de Peso
                 Saludable</a>
-              <a href="consulta-virtual.html"><i class="fa-solid fa-video"></i> Consulta Virtual</a>
-              <a href="electrocardiograma.html"><i class="fa-solid fa-heart-pulse"></i> Electrocardiograma</a>
-              <a href="sueroterapia.html"><i class="fa-solid fa-droplet"></i> Sueroterapia</a>
-              <a href="servicios.html#presion-arterial"><i class="fa-solid fa-gauge-high"></i> Toma de Presión
+              <a href="consulta-virtual.html"><i class="fa-solid fa-video" aria-hidden="true"></i> Consulta Virtual</a>
+              <a href="electrocardiograma.html"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Electrocardiograma</a>
+              <a href="sueroterapia.html"><i class="fa-solid fa-droplet" aria-hidden="true"></i> Sueroterapia</a>
+              <a href="medicina-estetica.html"><i class="fa-solid fa-spa" aria-hidden="true"></i> Medicina Estética</a>
+              <a href="presion-arterial.html"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> Toma de Presión
                 Arterial</a>
-              <a href="servicios.html#inyectologia"><i class="fa-solid fa-syringe"></i> Inyectología</a>
-              <a href="servicios.html#certificado-medico"><i class="fa-solid fa-file-medical"></i> Certificado
+              <a href="inyectologia.html"><i class="fa-solid fa-syringe" aria-hidden="true"></i> Inyectología</a>
+              <a href="certificado-medico.html"><i class="fa-solid fa-file-medical" aria-hidden="true"></i> Certificado
                 Médico</a>
             </div>
           </li>
@@ -152,19 +159,19 @@
       </nav>
 
       <div class="header-actions">
-        <a href="tel:+573106457155" class="phone-link"><i class="fa-solid fa-phone"></i> 310 645 7155</a>
-        <a href="contacto.html" class="btn btn-primary"><i class="fa-regular fa-calendar"></i> Agendar cita</a>
-        <button class="menu-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+        <a href="tel:+573106457155" class="phone-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> 310 645 7155</a>
+        <a href="contacto.html" class="btn btn-primary"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Agendar cita</a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-controls="menu-principal" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
       </div>
     </div>
   </header>
 
-  <section class="page-header">
+  <section class="page-header" id="contenido" tabindex="-1">
     <div class="container">
       <span class="eyebrow">TESTIMONIOS</span>
       <h1>Lo que dicen nuestros pacientes</h1>
       <div class="breadcrumb">
-        <a href="index.html">Inicio</a> <i class="fa-solid fa-chevron-right"></i> <span>Testimonios</span>
+        <a href="index.html">Inicio</a> <i class="fa-solid fa-chevron-right" aria-hidden="true"></i> <span>Testimonios</span>
       </div>
     </div>
   </section>
@@ -181,8 +188,8 @@
           <div class="testi-stars">★★★★★ <span class="score">5.0</span></div>
           <p class="testi-quote">"Excelente atención, muy profesional y dedicado. Explica todo con calma y se nota que
             le importa el paciente. Totalmente recomendado."</p>
-          <a href="servicios.html#consulta-externa" class="testi-link">Ver Consulta Externa <i
-              class="fa-solid fa-arrow-right"></i></a>
+          <a href="consulta-externa.html" class="testi-link">Ver Consulta Externa <i
+              class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="testi-card reveal reveal-delay-1">
           <div class="testi-card-head">
@@ -194,7 +201,7 @@
           <p class="testi-quote">"El Programa Integral de Peso Saludable realmente funciona. El seguimiento mensual del
             doctor marca la diferencia. Me siento mucho mejor."</p>
           <a href="programa-adelgazar.html" class="testi-link">Ver el programa <i
-              class="fa-solid fa-arrow-right"></i></a>
+              class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="testi-card reveal reveal-delay-2">
           <div class="testi-card-head">
@@ -205,7 +212,7 @@
           <div class="testi-stars">★★★★★ <span class="score">5.0</span></div>
           <p class="testi-quote">"La sueroterapia me ha ayudado mucho con mi energía y recuperación. El procedimiento es
             rápido, cómodo y se nota el resultado desde la primera sesión."</p>
-          <a href="sueroterapia.html" class="testi-link">Ver Sueroterapia <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="sueroterapia.html" class="testi-link">Ver Sueroterapia <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="testi-card reveal">
           <div class="testi-card-head">
@@ -217,7 +224,7 @@
           <p class="testi-quote">"El electrocardiograma fue rápido y el doctor me explicó todo con calma, sin
             apresurarse. El informe llegó el mismo día. Muy recomendado."</p>
           <a href="electrocardiograma.html" class="testi-link">Ver Electrocardiograma <i
-              class="fa-solid fa-arrow-right"></i></a>
+              class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="testi-card reveal reveal-delay-1">
           <div class="testi-card-head">
@@ -228,8 +235,8 @@
           <div class="testi-stars">★★★★★ <span class="score">5.0</span></div>
           <p class="testi-quote">"Llevo meses con el seguimiento médico y la diferencia en mi salud es notable. El Dr.
             Ochoa es muy comprometido con sus pacientes."</p>
-          <a href="servicios.html#consulta-externa" class="testi-link">Ver Consulta Externa <i
-              class="fa-solid fa-arrow-right"></i></a>
+          <a href="consulta-externa.html" class="testi-link">Ver Consulta Externa <i
+              class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="testi-card reveal reveal-delay-2">
           <div class="testi-card-head">
@@ -240,8 +247,8 @@
           <div class="testi-stars">★★★★★ <span class="score">5.0</span></div>
           <p class="testi-quote">"Agendar la cita fue muy fácil y la atención del consultorio impecable. El certificado
             médico fue expedido rápidamente y sin complicaciones."</p>
-          <a href="servicios.html#certificado-medico" class="testi-link">Ver Certificado Médico <i
-              class="fa-solid fa-arrow-right"></i></a>
+          <a href="certificado-medico.html" class="testi-link">Ver Certificado Médico <i
+              class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -251,7 +258,7 @@
     <div class="container">
       <div class="cta-bar reveal">
         <div class="cta-left">
-          <div class="icon-circle"><i class="fa-regular fa-calendar"></i></div>
+          <div class="icon-circle"><i class="fa-regular fa-calendar" aria-hidden="true"></i></div>
           <div>
             <h5>Sé nuestro próximo testimonio</h5>
             <p>Agenda tu cita y vive la experiencia.</p>
@@ -259,13 +266,13 @@
         </div>
         <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20agendar%20una%20cita." target="_blank"
           rel="noopener" class="cta-mid">
-          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           <div>
             <div class="label">Atención rápida por WhatsApp</div>
             <div class="phone">310 645 7155</div>
           </div>
         </a>
-        <a href="contacto.html" class="btn btn-white cta-right"><i class="fa-regular fa-calendar"></i> Agendar cita
+        <a href="contacto.html" class="btn btn-white cta-right"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Agendar cita
           ahora</a>
       </div>
     </div>
@@ -276,16 +283,16 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-logo">
-            <div class="logo-icon"><i class="fa-solid fa-stethoscope"></i></div>
+            <div class="logo-icon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></div>
             <span>Dr. Ochoa</span>
           </div>
           <p>Consulta Externa, Sueroterapia y Programas de Salud con enfoque preventivo y acompañamiento profesional.
           </p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
             <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
-              target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -302,22 +309,22 @@
         <div class="footer-col">
           <h4>Servicios</h4>
           <ul>
-            <li><a href="servicios.html#consulta-externa">Consulta Externa</a></li>
+            <li><a href="consulta-externa.html">Consulta Externa</a></li>
             <li><a href="programa-adelgazar.html">Programa Integral de Peso Saludable</a></li>
             <li><a href="electrocardiograma.html">Electrocardiograma</a></li>
             <li><a href="sueroterapia.html">Sueroterapia</a></li>
+            <li><a href="medicina-estetica.html">Medicina Estética</a></li>
             <li><a href="servicios.html">Ver todos los servicios</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Contacto</h4>
-          <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Cartagena de Indias,
-              Colombia</span></div>
-          <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><span>310 645 7155</span></div>
-          <div class="footer-contact-item"><i class="fa-regular fa-envelope"></i><span>rodrigo8alvear@gmail.com </span>
+          <div class="footer-contact-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Centro Médico Los Ejecutivos, Av. Pedro de Heredia, Calle 31 N° 58-38, Escallón Villa, local 120, Cartagena de Indias</span></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>310 645 7155</span></div>
+          <div class="footer-contact-item"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>rodrigo8alvear@gmail.com</span>
           </div>
-          <div class="footer-contact-item"><i class="fa-regular fa-clock"></i><span>Lun – Sáb: 8:00am – 6:00pm</span>
+          <div class="footer-contact-item"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Lun – Sáb: 8:00am – 6:00pm</span>
           </div>
         </div>
       </div>
@@ -330,11 +337,11 @@
 
   <a href="https://wa.me/573106457155?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     <span class="wa-label">WhatsApp</span>
   </a>
 
-  <script src="js/app.js?v=3"></script>
+  <script src="js/app.js?v=87fe634e"></script>
 </body>
 
 </html>

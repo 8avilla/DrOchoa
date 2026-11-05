@@ -379,3 +379,27 @@ footer.site-footer{background:var(--green-dark);color:#fff;padding:60px 0 0;}
   display:flex;align-items:center;gap:10px;
   padding:0 18px 0 16px;border-radius:30px;overflow:hidden;
 }
+
+/* ---------- Accesibilidad ---------- */
+.skip-link{
+  position:absolute;left:12px;top:-60px;z-index:200;background:var(--green-dark);color:#fff;
+  padding:10px 16px;border-radius:var(--radius-sm);font-weight:600;font-size:14px;transition:top .15s ease;
+}
+.skip-link:focus{top:12px;}
+[tabindex="-1"]:focus{outline:none;}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid var(--green-soft);outline-offset:3px;border-radius:4px;
+}
+.footer-social a:focus-visible,.site-footer a:focus-visible{outline-color:#fff;}
+/* El menú de servicios también se abre con el teclado */
+.has-dropdown:focus-within .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+/* Contraste: texto blanco sobre verde WhatsApp más oscuro (≥4.5:1) */
+.whatsapp-float{background:#0f7d41;}
+
+/* ---------- Mapa y dirección ---------- */
+.map-embed iframe{width:100%;height:100%;border:0;display:block;}
+.map-embed{aspect-ratio:16/7;}
+.map-address{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:14px;color:var(--text-gray);line-height:1.6;}
+.map-address i{color:var(--green);margin-top:4px;}
+.map-address a{color:var(--green);font-weight:600;margin-left:6px;white-space:nowrap;}
+@media (min-width: 981px){.services-grid-3{grid-template-columns:repeat(3,1fr);}}
